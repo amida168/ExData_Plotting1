@@ -18,7 +18,7 @@ png(file="plot4.png", width=480, height = 480)
 par(mfrow = c(2, 2))
 
 # 1
-with(epc_sub, plot(Datetime, Global_active_power, type = "l", xlab="", ylab="Global Active Power (kilowatts)"))
+with(epc_sub, plot(Datetime, Global_active_power, type = "l", xlab="", ylab="Global Active Power"))
 
 # 2
 with(epc_sub, plot(Datetime, Voltage, type = "l", xlab="datetime"))
