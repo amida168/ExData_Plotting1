@@ -5,7 +5,7 @@ data_file <- "household_power_consumption.txt"
 if (!file.exists(data_file)){
     url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
     download(url, dest=zip_file, mode="wb") 
-    unzip (zip_file, exdir = "./")
+    unzip (zip_file)
     file.remove(zip_file)
 }
 
